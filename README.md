@@ -3,11 +3,12 @@ Template rendering engine for Lua
 
 ## License
 Most of the code is written by Marc Balmer - see license notes in the source files.
+
 All of mine contributions:
-    - Changing project structure
-    - Changing build system to CMake
-    - Small code changes to make library compile on ubuntu
-    - Changing name of the library (shared object) to more unique one
+- Changing project structure
+- Changing build system to CMake
+- Small code changes to make library compile on ubuntu
+- Changing name of the library (shared object) to more unique one
 Are under the MIT license:
 
 ```
