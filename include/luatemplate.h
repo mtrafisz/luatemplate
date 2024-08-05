@@ -30,6 +30,11 @@
 
 #define	TEMPLATE_CONTEXT_METATABLE	"Lua template rendering context"
 
+#include <sys/queue.h>
+#include <lua.h>
+#include <lauxlib.h>
+#include <lualib.h>
+
 enum lt_escapes {
 	e_none = 0,
 	e_html,

@@ -1,4 +1,4 @@
-local template = require 'template'
+local template = require 'luatemplate'
 
 local msg = {}
 local function collect(text)

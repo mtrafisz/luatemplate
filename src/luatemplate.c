@@ -37,7 +37,7 @@
 #include <lauxlib.h>
 #include <lualib.h>
 
-#include "luatemplate.h"
+#include "../include/luatemplate.h"
 
 static int
 escape(lua_State *L, int escape)
@@ -263,7 +263,7 @@ render_clear(lua_State *L)
 }
 
 int
-luaopen_template(lua_State *L)
+luaopen_luatemplate(lua_State *L)
 {
 	struct luaL_Reg luatemplate[] = {
 		{ "context",	template_context },
@@ -296,11 +296,14 @@ luaopen_template(lua_State *L)
 	lua_pushliteral(L, "Copyright (C) 2016 - 2021 "
 	    "micro systems marc balmer");
 	lua_settable(L, -3);
+	lua_pushliteral(L, "Copyright (C) 2024 "
+	    "Mikolaj Trafisz");
+	lua_settable(L, -3);
 	lua_pushliteral(L, "_DESCRIPTION");
 	lua_pushliteral(L, "Lua Templates");
 	lua_settable(L, -3);
 	lua_pushliteral(L, "_VERSION");
-	lua_pushliteral(L, "template 1.2.0");
+	lua_pushliteral(L, "template 1.3.0");
 	lua_settable(L, -3);
 
 	return 1;

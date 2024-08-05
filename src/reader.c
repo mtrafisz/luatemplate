@@ -25,6 +25,9 @@
 #include <sys/param.h>
 #include <sys/mman.h>
 #include <sys/queue.h>
+#include <sys/stat.h>
+#include <sys/mman.h>
+#include <bits/mman-linux.h>
 
 #include <ctype.h>
 #include <fcntl.h>
@@ -33,15 +36,17 @@
 #include <string.h>
 #include <unistd.h>
 
-#if defined(__linux__) && !defined(LIBBSD_OVERLAY)
-#include <bsd/bsd.h>
-#endif
+
+// #if defined(__linux__) && !defined(LIBBSD_OVERLAY)
+// #include <bsd/bsd.h>
+// #endif
 
 #include <lua.h>
 #include <lauxlib.h>
+#include <lualib.h>
 
 #include "buffer.h"
-#include "luatemplate.h"
+#include "../include/luatemplate.h"
 
 enum lt_states {
 	s_startup = 0,
