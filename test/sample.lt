@@ -6,7 +6,7 @@
 	<title><%= title %></title>
 </head>
 <body>
-<% for n = 1, 10 do %>
+<% for n = 1, a do %>
 This is line <%= n %> : <%=%20d n %><br/>
 <% end %>
 </body>

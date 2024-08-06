@@ -32,8 +32,8 @@ file (GLOB TEST_SOURCES "test/*.c")
 foreach (TEST_SOURCE ${TEST_SOURCES})
     get_filename_component (TEST_NAME ${TEST_SOURCE} NAME_WE)
     add_executable (${TEST_NAME} ${TEST_SOURCE})
-    target_link_libraries (${TEST_NAME} luatemplate_so ${LUA_LIBRARIES})
-    target_include_directories(${TEST_NAME} PRIVATE ${LUA_INCLUDE_DIRS})
+    target_link_libraries (${TEST_NAME} luatemplate ${LUA_LIBRARIES})
+    target_include_directories(${TEST_NAME} PRIVATE ${LUA_INCLUDE_DIRS} ${CMAKE_CURRENT_SOURCE_DIR}/include)
 endforeach ()
 
 # --- Installation ---

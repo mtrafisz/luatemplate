@@ -46,7 +46,7 @@
 #include <lualib.h>
 
 #include "buffer.h"
-#include "../include/luatemplate.h"
+#include "include/luatemplate_lib.h"
 
 enum lt_states {
 	s_startup = 0,

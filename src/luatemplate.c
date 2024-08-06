@@ -37,7 +37,7 @@
 #include <lauxlib.h>
 #include <lualib.h>
 
-#include "../include/luatemplate.h"
+#include "include/luatemplate_lib.h"
 
 static int
 escape(lua_State *L, int escape)
