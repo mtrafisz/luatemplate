@@ -9,6 +9,7 @@ All of mine contributions:
 - Changing build system to CMake
 - Small code changes to make library compile on ubuntu
 - Changing name of the library (shared object) to more unique one
+- Creating interface for interacting with library from C
 
 Are under the MIT license:
 
