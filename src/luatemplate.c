@@ -296,9 +296,6 @@ luaopen_luatemplate(lua_State *L)
 	lua_pushliteral(L, "Copyright (C) 2016 - 2021 "
 	    "micro systems marc balmer");
 	lua_settable(L, -3);
-	lua_pushliteral(L, "Copyright (C) 2024 "
-	    "Mikolaj Trafisz");
-	lua_settable(L, -3);
 	lua_pushliteral(L, "_DESCRIPTION");
 	lua_pushliteral(L, "Lua Templates");
 	lua_settable(L, -3);
